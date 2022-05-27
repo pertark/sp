@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import styles from './App.module.css';
 import { createEffect, createSignal, For, resetErrorBoundaries } from "solid-js";
 import Flipping from "flipping/dist/flipping.css.js";
 

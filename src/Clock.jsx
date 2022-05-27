@@ -13,15 +13,6 @@ const clock = setInterval(() => {
     setDate(new Date());
 }, 1000)
 
-// debug clock
-// const clock = setInterval(() => {
-//   setDate((date) => {
-//     date.setTime(date.getTime() + 50000)
-//     console.log(date)
-//     return new Date(date);
-//   });
-// }, 100)
-
 function Clock(props) {
 
   // onCleanup(() => clearInterval(clock))

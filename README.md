@@ -1,3 +1,3 @@
 # sp
 
-startpage to remind you that time exists
+start page to remind you that time exists
