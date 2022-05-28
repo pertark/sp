@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  sp:
+    build: .
+    restart: unless-stopped
+    container_name: sp
+
+networks:
+  default:
+    external:
+      name: proxy
