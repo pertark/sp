@@ -11,7 +11,7 @@ import Search from './Search';
 function App() {
   return (
     <div>
-      <meta name="description" content="Custom start page to remind you of the existence of time" />
+      
       <Clock 
         style={{
           position: "absolute",
