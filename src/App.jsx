@@ -4,6 +4,7 @@ import { createEffect, createSignal, For } from "solid-js";
 import { createStore } from "solid-js/store";
 import Checklist from './Checklist';
 import Clock from './Clock';
+import Search from './Search';
 
 
 
@@ -24,10 +25,15 @@ function App() {
         style={{
           position: "absolute",
           left: "10%",
-          top: "10vh",
+          top: "15vh",
           "background-color": "rgb(255,255,255,0.4)"
         }}
       />
+      <Search style={{
+        "z-index": 100,
+        position: "absolute",
+        top: "1em"
+      }} />
     </div>
   )
 }

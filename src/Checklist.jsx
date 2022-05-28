@@ -3,8 +3,9 @@ import Flipping from "flipping/dist/flipping.css.js";
 
 
 let flipping;
-let options;
-createEffect(() => flipping = new Flipping(options))
+// let options;
+// createEffect(() => flipping = new Flipping(options))
+flipping = new Flipping();
 
 function Checklist(props) {
   const [tasks, setTasksRaw] = createSignal(JSON.parse(localStorage.tasks || "[\"\"]"), {equals: false})
@@ -123,7 +124,6 @@ function Checklist(props) {
           "padding": "2em",
           ...props.style
         }} 
-        data-flip-no-scale="boxbox"
       >
         <h1 style={{
           padding: 0,
@@ -143,6 +143,7 @@ function Checklist(props) {
               value={task} 
               onKeyDown={focusNext} 
               ref={(e) => setTimeout(() => e.focus())}
+              spellcheck="false"
             />
           </div>
           }
