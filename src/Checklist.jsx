@@ -154,8 +154,8 @@ function Checklist(props) {
             data-flip-key={`item-${task}`}
             class="item"
           >
-            <input type="checkbox" onChange={uncheck} checked={true} />
-            <input type="text" value={task} disabled={true} />
+            <input type="checkbox" onChange={uncheck} checked={true} id={`cb-${i()}`} />
+            <input type="text" value={task} disabled={true} id={`text-${i()}`}/>
           </div>
           }
         </For>
